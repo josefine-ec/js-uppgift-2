@@ -1,11 +1,23 @@
 import './App.css';
-import CustomerCard from './components/CustomerCard';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
+
+// Routes
+import RegisterCustomer from './views/RegisterCustomer';
+import Home from './views/Home';
+
+// Components
+import Navbar from './components/Navbar';
+
 
 function App() {
   return (
-    <div>
-      <CustomerCard firstName="Juni" lastName="Askling" emailAddress="juni.askling@gmail.com" />
-    </div>
+      <BrowserRouter>
+        <Navbar />
+        <Switch>
+          <Route path="/registercustomer" exact component={RegisterCustomer} />
+          <Route path="/" exact component={Home} />
+        </Switch>
+      </BrowserRouter>
   );
 }
 
