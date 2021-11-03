@@ -2,7 +2,7 @@ import React from 'react'
 
 const RegistrationForm = () => {
     return (
-        <form className="container w-50">
+        <form className="container w-50 mt-5">
             <div className="mb-3">
                 <label for="firstName" className="form-label">Firstname</label>
                 <input type="text" className="form-control" id="firstname" />
