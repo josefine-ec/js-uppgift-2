@@ -5,7 +5,7 @@ const RegistrationForm = () => {
 
 
         useEffect(() => {
-            let json = JSON.stringify({ firstName: "Slukarn", lastName: "Bryggward", email: "slukarn.bryggward@kaloppsan.se"})
+            let json = JSON.stringify({ firstName: "", lastName: "", email: ""})
             fetch("https://ecexam-webapi.azurewebsites.net/api/Customers", {
                 headers: {
                     'Content-Type': 'application/json'
